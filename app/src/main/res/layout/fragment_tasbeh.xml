@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TasbehFragment"
+    android:background="@drawable/mainbackground">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_tasbeh"
+        android:id="@+id/sebha_image"
+        app:layout_constraintTop_toTopOf="@+id/top_seperator"
+        app:layout_constraintBottom_toTopOf="@id/two_image_seperator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/sebha"
+        />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/two_image_seperator"
+        app:layout_constraintGuide_percent=".40"
+        />
+    <ImageView
+
+        android:contentDescription="@string/restart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_refresh"
+        android:id="@+id/refresh"
+        app:layout_constraintTop_toBottomOf="@+id/two_image_seperator"
+        app:layout_constraintBottom_toTopOf="@id/image_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onRestartCliked"
+        />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/top_seperator"
+        app:layout_constraintGuide_percent=".1"
+        />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/image_guideline"
+        app:layout_constraintGuide_percent=".5"
+        />
+
+    <FrameLayout
+
+        android:id="@+id/frame_contain_tasbeh_count"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_tasbeh"
+        app:layout_constraintTop_toBottomOf="@id/image_guideline">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/num_of_tasbeh_at_session"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/total_tasbeh"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/count_at_once"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/tasbeh_count_shape"
+            android:text="@string/_0"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/total_count"
+            android:background="@drawable/tasbeh_count_shape"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            tools:text="0"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:id="@+id/spinner_zekr"
+            android:background="@color/colorAccent"
+            android:popupBackground="@color/colorPrimary"
+            />
+    </FrameLayout>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/bottom_tasbeh"
+        app:layout_constraintGuide_percent=".85"
+        />
+
+</android.support.constraint.ConstraintLayout>

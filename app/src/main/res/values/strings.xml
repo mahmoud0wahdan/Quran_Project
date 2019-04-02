@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Islami2</string>
+    <string name="holy_quran">Holy Quran</string>
+    <string name="tasbeh">Tasbeh</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quran_kareem">القران الكريم</string>
+    <string name="title_activity_soura_read">SouraRead</string>
+    <string name="sebha">Sebha</string>
+    <string name="restart">Restart</string>
+    <string name="num_of_tasbeh_at_session">التسبيحة</string>
+    <string name="total_tasbeh">مجموع التسبيجات</string>
+    <string name="_0">0</string>
+    <string name="allah_akbar">الله أكبر</string>
+    <string name="radio">Radio</string>
+    <string name="failed">Failed</string>
+    <string name="ok">Ok</string>
+    <string name="loading">Loading</string>
+    <string name="error">Error</string>
+</resources>
